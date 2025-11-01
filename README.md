@@ -20,7 +20,11 @@ YieldDonating strategies are designed to:
 ```sh
 git clone --recursive https://github.com/golemfoundation/octant-v2-tokenized-strategy-foundry-mix
 cd octant-v2-tokenized-strategy-foundry-mix
-yarn
+
+# TEMPORARY: Install octant-v2-core dependencies (needed until remapping issue with forge is resolved)
+cd lib/octant-v2-core && forge soldeer install && cd ../..
+
+forge install
 ```
 
 ### Environment Setup
